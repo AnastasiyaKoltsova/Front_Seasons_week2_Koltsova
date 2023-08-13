@@ -1,0 +1,61 @@
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    
+    background: linear-gradient( blue, transparent 1px), linear-gradient( 90deg, blue, transparent 1px);
+    background-size: 15px 15px;
+    background-position: center center;
+    font-family: 'Pangolin', cursive;
+    font-size: 20px;
+}
+
+.container {
+    padding: 16px 50px;
+}
+
+.legend-title,
+.names,
+.status-text,
+.hint {
+    margin-bottom: 3vh;
+}
+
+.names {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+.hint {
+    color: red;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin-bottom: 3vh;
+}
+
+button {
+    max-width: 200px;
+    padding: 4px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: red;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
